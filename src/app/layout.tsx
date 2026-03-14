@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://squadcommands.com"),
   title: "Squad Spawn Commands – Vehicle & Deployable Admin Reference",
   description:
     "Complete quick-reference for all Squad admin spawn commands. Search and filter vehicles, emplacements, and deployables across all factions. Click to copy AdminCreateVehicle commands.",
