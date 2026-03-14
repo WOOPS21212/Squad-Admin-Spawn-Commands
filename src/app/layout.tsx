@@ -13,8 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Squad Admin Spawn Commands",
-  description: "Quick reference for all Squad vehicle and deployable admin spawn commands",
+  title: "Squad Spawn Commands – Vehicle & Deployable Admin Reference",
+  description:
+    "Complete quick-reference for all Squad admin spawn commands. Search and filter vehicles, emplacements, and deployables across all factions. Click to copy AdminCreateVehicle commands.",
+  keywords: [
+    "Squad",
+    "Squad game",
+    "admin commands",
+    "spawn commands",
+    "AdminCreateVehicle",
+    "AdminCreateDeployable",
+    "Squad vehicles",
+    "Squad admin",
+    "Squad server",
+    "Squad mods",
+  ],
+  verification: {
+    google: "EvYbxANs_zjB5P21VN6Z4VpFKIpL74R1P_qFmNMeXOI",
+  },
+  openGraph: {
+    title: "Squad Spawn Commands",
+    description:
+      "Searchable quick-reference for all Squad admin spawn commands. Vehicles, emplacements, and deployables across every faction.",
+    url: "https://squadcommands.com",
+    siteName: "Squad Commands",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
