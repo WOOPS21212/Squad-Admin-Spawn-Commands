@@ -8,7 +8,13 @@ export type CategoryKey =
   | "helicopters"
   | "boats"
   | "emplacements"
-  | "deployables";
+  | "deployables"
+  | "player"
+  | "match"
+  | "team"
+  | "server"
+  | "gameplay"
+  | "demo";
 
 export interface VehicleCommand {
   v: string; // variant name
