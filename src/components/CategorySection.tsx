@@ -34,12 +34,19 @@ export default function CategorySection({
 
   return (
     <div className="max-w-[1200px] mx-auto mb-10">
-      <div className="flex items-center gap-2.5 mb-3 pb-2 border-b border-[#30363d]">
-        <span className="text-xl">{cat.icon}</span>
-        <span className="text-lg font-semibold">{cat.name}</span>
-        <span className="text-xs bg-[#2d333b] text-[#8b949e] px-2 py-0.5 rounded-full">
-          {visibleVehicles.length} vehicles
-        </span>
+      <div className="mb-4 pb-3 border-b border-[#30363d]">
+        <div className="flex items-center gap-2.5">
+          <span className="text-xl">{cat.icon}</span>
+          <span className="text-lg font-semibold">{cat.name}</span>
+          <span className="text-xs bg-[#2d333b] text-[#8b949e] px-2 py-0.5 rounded-full">
+            {visibleVehicles.length}
+          </span>
+        </div>
+        {cat.description && (
+          <p className="mt-1.5 text-sm text-[#8b949e] max-w-2xl leading-relaxed">
+            {cat.description}
+          </p>
+        )}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {vehicles.map((vehicle, i) => (

@@ -32,4 +32,5 @@ export interface Vehicle {
 export interface CategoryInfo {
   icon: string;
   name: string;
+  description?: string;
 }
